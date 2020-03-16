@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MenubarComponent } from './components/menubar/menubar.component';
+import { Comp01Component } from './components/comp01/comp01.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenubarComponent
+    MenubarComponent,
+    Comp01Component
   ],
   imports: [
     BrowserModule,

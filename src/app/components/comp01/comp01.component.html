@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header bg-success textoBlanco">{{ title }}</div>
+  <div class="card-body">
+    <h5 class="card-title">Utilización de directivas ngIf y evento Click</h5>
+    <p class="card-text">Contactos</p>
+    <ul *ngIf="flag == true">
+      <li>Id: {{ contactos[0].id }} </li>
+      <li>Nombres: {{ contactos[0].nombres }} </li>
+      <li>Apellidos: {{ contactos[0].apellidos }} </li>
+      <li>Dirección: {{ contactos[0].direccion }} </li>
+      <li>Teléfono: {{ contactos[0].telefono }} </li>
+      <li>Email: {{ contactos[0].email }} </li>
+    </ul>
+    <ul *ngIf="flag == false">
+      <li>Id: {{ contactos[1].id }} </li>
+      <li>Nombres: {{ contactos[1].nombres }} </li>
+      <li>Apellidos: {{ contactos[1].apellidos }} </li>
+      <li>Dirección: {{ contactos[1].direccion }} </li>
+      <li>Teléfono: {{ contactos[1].telefono }} </li>
+      <li>Email: {{ contactos[1].email }} </li>
+    </ul>
+    <br/>
+    <a href="#" class="btn btn-primary" (click)="mostrarElementos()">Click aquí !!!</a>
+  </div>
+</div>
